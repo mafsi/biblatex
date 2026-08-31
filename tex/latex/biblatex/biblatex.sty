@@ -7031,9 +7031,9 @@
          Using the old, problematic definition}%
        \global\let\blx@warn@mainlang\@empty}
       {}%
-    \select@language{\blx@main@language}}%
-  \def\blx@imc@textmainlang##1{{{\select@language{\blx@main@language}##1}}}%
-  \def\blx@imc@textouterlang##1{{{\select@language{\blx@outer@language}##1}}}%
+    \expandafter\selectlanguage\expandafter{\blx@main@language}}%
+  \def\blx@imc@textmainlang{\csuse{text\blx@main@language}}%
+  \def\blx@imc@textouterlang{\csuse{text\blx@outer@language}}%
   \expandafter\blx@langsetup@from@pkglist\expandafter{\blx@main@language}}
 
 \def\blx@mknoautolang{%
