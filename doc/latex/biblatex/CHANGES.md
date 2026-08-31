@@ -1,3 +1,8 @@
+# RELEASE NOTES FOR VERSION 3.22a
+- Switched `\mkrelatedstringtext` from `\textmainlang` to `\textouterlang`.
+  The old behaviour can be restored with
+  `\renewcommand{\mkrelatedstringtext}{\textouterlang}`
+
 # RELEASE NOTES FOR VERSION 3.22
 - Added `noanchors` option to suppress link anchors/targets to
   a bibliography.

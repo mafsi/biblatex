@@ -194,7 +194,7 @@
 % Examples of use, uncommenting these would break backwards compatibility
 %\newcommand*{\begrelateddelimorigpubin}{\addspace}
 %\newcommand*{\begrelateddelimorigpubas}{\addspace}
-\newcommand{\mkrelatedstringtext}{\textmainlang}
+\newcommand{\mkrelatedstringtext}{\textouterlang}
 
 % Used for indexing
 
