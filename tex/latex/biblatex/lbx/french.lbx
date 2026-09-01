@@ -413,6 +413,15 @@
   sectiontotals    = {{sections}{sect\adddot}},
   paragraphtotal   = {{paragraphe}{\S}},
   paragraphtotals  = {{paragraphes}{\S}},
+  % prefer Latin "in" over French "dans"
+  % as Latin-derived terms are still common in traditional
+  % French typography
+  % https://github.com/plk/biblatex/pull/552
+  % https://github.com/plk/biblatex/pull/1022
+  % https://github.com/plk/biblatex/issues/1473
+  % Add
+  % \DefineBibliographyStrings{french}{in = {dans}, inseries = {dans},}
+  % to your preamble if you prefer "dans"
   in               = {{in}{in}},
   inseries         = {{in}{in}},
   ofseries         = {{de}{de}},
